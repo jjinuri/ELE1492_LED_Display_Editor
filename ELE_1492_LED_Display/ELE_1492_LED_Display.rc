@@ -1,0 +1,398 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#include ""res\\ELE_1492_LED_Display.rc2""  // Microsoft Visual C++ 이외의 다른 도구에서 편집한 리소스입니다.\r\n"
+    "#include ""afxres.rc""     // 표준 구성 요소입니다.\r\n"
+    "#endif\r\n"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\ELE_1492_LED_Display.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 259, 57
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ELE_1492_LED Image Editer 정보"
+FONT 9, "MS 셸 대화 상자", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "ELE_1492_LED Image Editer Version 0.14",IDC_STATIC,40,10,147,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2012",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "확인",IDOK,202,7,50,16,WS_GROUP
+END
+
+IDD_ELE_1492_LED_DISPLAY_DIALOG DIALOGEX 0, 0, 653, 350
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_OVERLAPPEDWINDOW | WS_EX_APPWINDOW
+CAPTION "ELE_1492_LED Image Editer"
+FONT 9, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "종료",IDOK,69,45,40,16,NOT WS_VISIBLE
+    PUSHBUTTON      "취소",IDCANCEL,14,45,50,16,NOT WS_VISIBLE
+    PUSHBUTTON      "적용",IDC_BUT_APPLY,399,177,119,16
+    PUSHBUTTON      "Load",IDC_BUT_FILE_OPEN,472,314,50,16
+    PUSHBUTTON      "도움말",IDC_BUT_HELP,553,15,40,16
+    PUSHBUTTON      "전송",IDC_BUT_SEND,545,177,92,16
+    PUSHBUTTON      "Save",IDC_BUT_FILE_SAVE,526,314,50,16
+    COMBOBOX        IDC_COMBO_MATRIX_SEL,63,17,24,80,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_PORT_NUM,595,145,40,62,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_TEXT,413,160,106,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_FILE_PATH,52,317,406,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Color:",IDC_STATIC,14,148,24,8
+    LTEXT           "Save File:",IDC_STATIC,14,318,35,8
+    LTEXT           "UART Port:",IDC_STATIC,547,146,36,8
+    LTEXT           "1:",IDC_STATIC,32,222,8,8
+    LTEXT           "2:",IDC_STATIC,178,222,8,8
+    LTEXT           "3:",IDC_STATIC,324,222,8,8
+    LTEXT           "4:",IDC_STATIC,469,222,8,8
+    LTEXT           "5:",IDC_STATIC,32,243,8,8
+    LTEXT           "6:",IDC_STATIC,178,243,8,8
+    LTEXT           "7:",IDC_STATIC,324,243,8,8
+    LTEXT           "8:",IDC_STATIC,469,243,8,8
+    LTEXT           "9:",IDC_STATIC,32,264,8,8
+    LTEXT           "10:",IDC_STATIC,174,264,12,8
+    LTEXT           "11:",IDC_STATIC,320,264,12,8
+    LTEXT           "12:",IDC_STATIC,465,264,12,8
+    LTEXT           "13:",IDC_STATIC,28,285,12,8
+    LTEXT           "14:",IDC_STATIC,174,285,12,8
+    LTEXT           "15:",IDC_STATIC,320,285,12,8
+    LTEXT           "Text:",IDC_STATIC,393,161,17,9
+    LTEXT           "Select Image:",IDC_STATIC,15,18,46,10
+    CTEXT           "=== ELE-1492 co.LTD ===",IDC_STATIC,278,334,93,8
+    PUSHBUTTON      "Image Clear",IDC_BUT_CLEAR,59,161,66,16
+    LTEXT           "16:",IDC_STATIC,465,285,12,8
+    CTEXT           "Ver 0.14",IDC_STATIC,489,19,50,9
+    CTEXT           "PORT Close",IDC_COMPORT_STATE,551,161,74,10
+    COMBOBOX        IDC_COMBO_FRAME_NUM,339,145,28,14,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_DELAY_TIME,339,160,28,14,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Fornt Delay Pixel:",IDC_STATIC,277,161,58,9
+    LTEXT           "Frame Mode:",IDC_STATIC,277,146,46,9
+    COMBOBOX        IDC_COMBO_DELAY_TIME_REAR,339,176,28,14,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Rear Delay Pixel:",IDC_STATIC,277,177,58,9
+    CONTROL         "",IDC_CHECK_IMAGE1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,42,222,9,10
+    CONTROL         "",IDC_CHECK_IMAGE2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,187,222,9,10
+    CONTROL         "",IDC_CHECK_IMAGE3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,332,222,9,10
+    CONTROL         "",IDC_CHECK_IMAGE4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,478,222,9,10
+    CONTROL         "",IDC_CHECK_IMAGE5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,42,243,9,10
+    CONTROL         "",IDC_CHECK_IMAGE6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,187,243,9,10
+    CONTROL         "",IDC_CHECK_IMAGE7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,332,243,9,10
+    CONTROL         "",IDC_CHECK_IMAGE8,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,478,243,9,10
+    CONTROL         "",IDC_CHECK_IMAGE9,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,42,264,9,10
+    CONTROL         "",IDC_CHECK_IMAGE10,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,187,264,9,10
+    CONTROL         "",IDC_CHECK_IMAGE11,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,332,264,9,10
+    CONTROL         "",IDC_CHECK_IMAGE12,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,478,264,9,10
+    CONTROL         "",IDC_CHECK_IMAGE13,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,42,285,9,10
+    CONTROL         "",IDC_CHECK_IMAGE14,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,187,285,9,10
+    CONTROL         "",IDC_CHECK_IMAGE15,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,332,285,9,10
+    CONTROL         "",IDC_CHECK_IMAGE16,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,478,285,9,10
+    GROUPBOX        "LED Image",IDC_STATIC,7,197,639,136
+    GROUPBOX        "Trans LED Image",IDC_STATIC,534,133,112,64
+    COMBOBOX        IDC_COMBO_TEXT_SIZE,445,145,27,14,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Text Font Size:",IDC_STATIC,393,146,49,9
+    GROUPBOX        "Text Apply",IDC_STATIC,381,133,151,64
+    GROUPBOX        "Image Setting",IDC_STATIC,264,133,115,64
+    LTEXT           "주의) 아래의 체크된 파일만 도깨비불로 전송합니다. 전송하는 시간은 1개당 1초 정도의 시간이 걸립니다.",IDC_STATIC,55,205,384,9
+    GROUPBOX        "Color Select and Image Clear",IDC_STATIC,7,133,171,64
+    RTEXT           "현재는 데모버젼이라서 1개만 전송됩니다.",IDC_STATIC_DEMO_VERSION_TEXT,411,203,232,9
+    LTEXT           "주의) 위의 모든 이미지를 저장합니다.",IDC_STATIC,52,306,229,9
+    GROUPBOX        "LED Image",IDC_STATIC,7,7,639,125
+    PUSHBUTTON      "Save As...",IDC_BUT_FILE_SAVE2,580,314,50,16
+    PUSHBUTTON      "Undo(되돌리기)",IDC_BUT_UNDO,33,178,54,16
+    PUSHBUTTON      "ReDo(재실행)",IDC_BUT_REDO,98,178,54,16
+    PUSHBUTTON      "Position Change",IDC_BUT_POSITION_CHANGE,188,177,65,16
+    GROUPBOX        "Image Position",IDC_STATIC,181,132,80,64
+    COMBOBOX        IDC_COMBO_IMAGE_CHANGE_FRONT,188,160,28,14,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_IMAGE_CHANGE_REAR,225,160,28,14,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CTEXT           "Image Number",IDC_STATIC,187,146,69,8
+    PUSHBUTTON      "정보",IDC_BUT_INFO,599,15,40,16
+END
+
+IDD_USER_HELP DIALOGEX 0, 0, 534, 201
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "도움말"
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,477,7,50,16
+    PUSHBUTTON      "Cancel",IDCANCEL,415,7,50,16,NOT WS_VISIBLE
+    COMBOBOX        IDC_COMBO_HELP_LIST,30,7,93,63,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "목차:",IDC_STATIC,8,10,19,9
+    LISTBOX         IDC_LIST_HELP_LIST,7,36,76,158,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "세부목차",IDC_STATIC,17,25,41,9
+    LTEXT           "설명",IDC_STATIC,93,25,41,9
+    CONTROL         "리스트에서 선택해주세요.",IDC_STATIC_EXPLAIN,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,87,38,440,156,WS_EX_DLGMODALFRAME
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041203b5"
+        BEGIN
+            VALUE "CompanyName", "<ELE-1492>"
+            VALUE "FileDescription", "아이디어 상품으로 이진우가 프로그램 한다."
+            VALUE "FileVersion", "1.0.0.04"
+            VALUE "InternalName", "ELE_1492_LED_Image_Editer.exe"
+            VALUE "LegalCopyright", "<ELE-1492>.  All rights reserved."
+            VALUE "OriginalFilename", "ELE_1492_LED_Image_Editer.exe"
+            VALUE "ProductName", "도깨비불 16bit"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 949
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 252
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 50
+    END
+
+    IDD_ELE_1492_LED_DISPLAY_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 646
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 343
+    END
+
+    IDD_USER_HELP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 527
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// REGISTRY
+//
+
+IDR_ELE_1492_LED_DISPLAY REGISTRY                "ELE_1492_LED_Display.rgs"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "ELE_1492_LED Image Editer 정보(&A)..."
+    IDS_SAVE_FILE           "파일이 저장되었습니다."
+    IDS_SAVE_FILE_OPEN_ERROR "Led file을 여는데 실패하였습니다. \n 파일을 확인하여 주십시오."
+    IDS_SAVE_FILE_OPEN_ERROR2 "이 파일은 Led file이 아닙니다. "
+    IDS_ERROR_CREATE_SAVE_FILE "Save file 생성에 실패하였습니다."
+    IDS_HELP                "이 프로그램은 허철호 사장님과 같이 시작하였다. \n 이하 부터는 COM Port를 찾는 방법을 설명하겠다. \n 우선 윈도우 버튼과 break 버튼을 동시에 누른다. \n 그러면 창이 하나 뜬다. "
+    IDS_ERROR_OPEN_COM_PORT "COM Port 여는데 실패하였습니다. "
+    IDS_PORT_OPEN           "Port Open"
+    IDS_PORT_CLOSE          "Port Close"
+    IDS_DEMO_VERSION        "데모버젼입니다. 1번만 전송됩니다."
+    IDS_IMAGE_CHANGE_ERROR  "선택하신 번호가 동일합니다. \r\n다시 선택하여 주십시오."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SAVETEMP_LED_SELECT_ERROR "LED Image 선택이 잘못되었습니다."
+    IDS_MEMORY_ERROR        "메모리가 부족합니다. "
+    IDS_EXIT_SAVE_MESSAGE   "종료하시기전에 저장하시겠습니까?"
+    IDS_EXPLAIN_BUTTON      "버튼 설명"
+    IDS_EXPLAIN_MOUSE       "마우스 설명"
+    IDS_EXPLAIN_UART_PORT   "UART Port 설정 설명"
+    IDS_CHECK_BOX_ERROR     "전송할 이미지가 없습니다.\r\n체크박스와 이미지를 확인하여 주십시오."
+    IDS_IMAGE_WIDTH_ERROR   " 이미지가 없습니다. \r\n확인하여 주세요."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_EXPLAIN_BUTTON_01   "Image Select"
+    IDS_EXPLAIN_BUTTON_01_EXP "수정할 이미지를 선택한다."
+    IDS_EXPLAIN_BUTTON_02   "Color "
+    IDS_EXPLAIN_BUTTON_02_EXP 
+                            "앞쪽 사각형은 선택된 이미지를 나타낸다. \r\n\r\n뒤쪽에 작은 사각형들은 선택할 수 있는 색상들을 나타낸다."
+    IDS_STRING122           "Image Clear"
+    IDS_STRING123           "화면의 이미지를 모두 삭제한다."
+    IDS_STRING124           "Undo"
+    IDS_STRING125           "Image를 수정했던 것을 되돌리는 기능이다."
+    IDS_STRING126           "ReDo"
+    IDS_STRING127           "되돌렸던 이미지를 다시 수정하였던 상태로 돌아오는 기능이다."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING128           "Image Posion"
+    IDS_STRING129           "Image 위치를 바꾸기 위한 콤보 박스이다. \r\n\r\n위치를 바꿀 두개의 이미지를 선택한다."
+    IDS_STRING130           "Position Change"
+    IDS_STRING131           "Image 위치를 바꾸는 기능을 수행한다."
+    IDS_STRING132           "Frame Mode"
+    IDS_STRING133           "잔상은 나타내는 속도를 설정한다. \r\n\r\n1~5까지 있으며, 1로 설정하는 것이 가장빠르며 이미지의 폭을 넓게 그렸을경우 \r\n\r\n1로 설정하는 것이 바람직하다."
+    IDS_STRING134           "Front Delay"
+    IDS_STRING135           "이미지의 앞쪽에 이미지 간격을 설정한다."
+    IDS_STRING136           "Rear Delay"
+    IDS_STRING137           "이미지의 뒤쪽에 이미지 간격을 설정한다."
+    IDS_STRING138           "Text Font Size"
+    IDS_STRING139           "글자를 적용할때 글자의 크기를 설정한다."
+    IDS_STRING140           "Text"
+    IDS_STRING141           "글자를 입력한다."
+    IDS_STRING142           "적용"
+    IDS_STRING143           "글자를 적용한다."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING144           "UART Port"
+    IDS_STRING145           "도깨비불로 이미지를 전송할 UART Port를 선택한다. \r\nUART Port 선택에 대한 설명은 다른 설명을 참조하기 바란다."
+    IDS_STRING146           "Port Close"
+    IDS_STRING147           "Port의 상태를 표시한다."
+    IDS_STRING148           "전송"
+    IDS_STRING149           "UART를 통해서 도깨비불로 이미지를 전송한다."
+    IDS_STRING150           "Check Box"
+    IDS_STRING151           "전송할 이미지들을 선택한다."
+    IDS_STRING152           "Load"
+    IDS_STRING153           "기존에 저장해 두었던 이미지를 불러온다."
+    IDS_STRING154           "Save"
+    IDS_STRING155           "수정한 이미지를 모두 저장한다. 1~16번까지 이미지를 모두 한꺼번에 저장한다."
+    IDS_STRING156           "Save As..."
+    IDS_STRING157           "다른이름으로 파일 저장한다."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_EXPLAIN_MOUSE_01    "마우스 왼쪽키"
+    IDS_STRING119           "마우스의 왼쪽키를 눌러서 선택된 색상으로 이미지를 그릴수 있다."
+    IDS_STRING120           "마우스 오른쪽키"
+    IDS_STRING121           "마우스 오른쪽키를 이용하여 검은색을 칠하여 해당하는 LED Pixel을 지울수 있다."
+    IDS_STRING163           "마우스 드래그"
+    IDS_STRING164           "마우스 왼쪽키를 드래그하여 이미지를 그릴수 있다."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_EXPLAIN_UART_01     "UART Port 찾는 방법"
+    IDS_STRING166           "1. 시작->제어판->시스템->시스템 등록정보->하드웨어->장치관리자->포트(COM및 PLT)를 확인한다.\r\n2. USB Seial COMXX 에서 COMXX를 기억해둔다.\r\n3. 해당 번호를 UART Port에서 선택한다."
+    IDS_STRING165           "UART를 통해 전송하는 방법"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING167           "1. 도깨비불을 USB에 꼽는다.\r\n2. 도깨비불 전원을 켠다.\r\n3. UART Port를 찾는다.(UART Port 찾는 방법 참조)\r\n4. UART Port를 설정한다.\r\n5. 전송할 LED Image를 체크한다.\r\n6. 전송 버튼을 누른다.\r\n7. 도깨비불에 체크한 번호의 LED가 하늘색이 들어오는지 보라색이 들어오는지 확인한다. \r\n8. 만일 보라색이 들어와있다면 전송하는데 문제가 발생하였으므로 1번부터 다시 수행한다."
+END
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#pragma code_page(949)
+#include "res\ELE_1492_LED_Display.rc2"  // Microsoft Visual C++ 이외의 다른 도구에서 편집한 리소스입니다.
+#include "afxres.rc"     // 표준 구성 요소입니다.
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

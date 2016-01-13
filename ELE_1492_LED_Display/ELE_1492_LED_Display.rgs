@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		'%APPID%' = s 'ELE_1492_LED_Display'
+				'ELE_1492_LED_Display.EXE'
+				{
+			val AppID = s '%APPID%'
+		}
+	}
+}
